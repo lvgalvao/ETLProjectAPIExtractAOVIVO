@@ -1,49 +1,54 @@
+Aqui está um exemplo de README para o seu arquivo `exemplo_05.py`, incluindo instruções de instalação e uma explicação sobre o que o código faz.
 
-# ETLProjectAPIExtractAOVIVO
+```markdown
+# Exemplo 05 - Uso da API OpenAI
 
-## Descrição do Projeto
-Este projeto é uma implementação de um processo ETL (Extração, Transformação e Carga) utilizando Python e a biblioteca `requests` para extrair dados de uma API. O objetivo é coletar dados em tempo real, transformá-los conforme necessário e carregá-los em um banco de dados ou arquivo para análise posterior.
+Este exemplo demonstra como fazer uma chamada à API OpenAI para obter uma resposta a uma pergunta específica. O código utiliza a biblioteca `requests` para enviar uma solicitação HTTP e a biblioteca `dotenv` para gerenciar variáveis de ambiente.
 
-## Tecnologias Utilizadas
-- Python
-- requests
-- pandas (opcional, para manipulação de dados)
-- SQLAlchemy (opcional, para interação com bancos de dados)
+## Pré-requisitos
 
-## Estrutura do Projeto
+Antes de executar o código, você precisa ter o Python instalado em sua máquina. Além disso, você deve ter uma chave de API da OpenAI. 
+
+## Instalação
+
+1. Clone este repositório ou baixe o arquivo `exemplo_05.py`.
+2. Crie um arquivo chamado `requirements.txt` e adicione as seguintes dependências:
+
 ```
-ETLProjectAPIExtractAOVIVO/
-│
-├── src/
-│   ├── extract.py      # Script para extração de dados da API
-│   ├── transform.py    # Script para transformação dos dados
-│   └── load.py         # Script para carga dos dados
-│
-├── requirements.txt    # Dependências do projeto
-└── README.md           # Documentação do projeto
+requests
+python-dotenv
 ```
 
-## Como Executar
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu_usuario/ETLProjectAPIExtractAOVIVO.git
-   cd ETLProjectAPIExtractAOVIVO
-   ```
+3. Instale as dependências usando o pip:
 
-2. Instale as dependências:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
-3. Execute o processo ETL:
-   ```bash
-   python src/extract.py
-   python src/transform.py
-   python src/load.py
-   ```
+4. Crie um arquivo `.env` na mesma pasta que o seu script e adicione sua chave de API da OpenAI:
 
-## Contribuições
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+```
+OPENAI_API_KEY=sua_chave_api_aqui
+```
 
-## Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+## Execução
+
+Para executar o exemplo, use o seguinte comando no terminal:
+
+```bash
+python exemplos/exemplo_05.py
+```
+
+## O que o código faz
+
+- O código carrega as variáveis de ambiente do arquivo `.env`.
+- Define a URL da API OpenAI e os cabeçalhos necessários para a solicitação.
+- Cria um objeto de dados que contém o modelo a ser usado e a mensagem do usuário.
+- Envia uma solicitação POST para a API e imprime a resposta recebida, que contém a resposta à pergunta "Qual é a capital da França?".
+
+## Observações
+
+Certifique-se de que sua chave de API está correta e que você tem acesso à API OpenAI.
+```
+
+Sinta-se à vontade para ajustar qualquer parte do README conforme necessário!
