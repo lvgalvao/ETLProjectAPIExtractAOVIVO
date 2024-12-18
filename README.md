@@ -1,6 +1,5 @@
 Aqui está um exemplo de README para o seu arquivo `exemplo_05.py`, incluindo instruções de instalação e uma explicação sobre o que o código faz.
 
-```markdown
 # Exemplo 05 - Uso da API OpenAI
 
 Este exemplo demonstra como fazer uma chamada à API OpenAI para obter uma resposta a uma pergunta específica. O código utiliza a biblioteca `requests` para enviar uma solicitação HTTP e a biblioteca `dotenv` para gerenciar variáveis de ambiente.
@@ -49,6 +48,5 @@ python exemplos/exemplo_05.py
 ## Observações
 
 Certifique-se de que sua chave de API está correta e que você tem acesso à API OpenAI.
-```
 
 Sinta-se à vontade para ajustar qualquer parte do README conforme necessário!
