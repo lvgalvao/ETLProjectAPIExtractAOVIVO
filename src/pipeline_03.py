@@ -7,7 +7,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 # Importar Base e BitcoinPreco do database.py
-from database import Base, BitcoinPreco
+from database.tabela_bitcoin_precos import Base, BitcoinPreco
 
 # Carrega variáveis de ambiente do arquivo .env
 load_dotenv()
