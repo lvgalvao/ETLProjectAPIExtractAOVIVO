@@ -43,7 +43,8 @@ def salvar_dados_sqlserver(dados):
         client = SecretClient(vault_url=key_vault_url, credential=credential)
         sqlusername = client.get_secret("sqlusername")
         sqlpassword = client.get_secret("sqlpassword")
-
+        print(sqlusername)
+        print(sqlpassword)
         # Conexão com o banco de dados
         server = "workshopazuredatavase.database.windows.net"
         database = "meubancodedadosaovivo "

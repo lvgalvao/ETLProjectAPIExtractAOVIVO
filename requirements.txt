@@ -6,7 +6,8 @@ azure-functions
 azure-identity
 pyodbc
 requests
-azure-keyvault-keysaltair==5.5.0
+azure-keyvault-keys
+altair==5.5.0
 attrs==24.3.0
 azure-core==1.32.0
 azure-functions==1.21.3
