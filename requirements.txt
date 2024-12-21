@@ -6,4 +6,4 @@ azure-functions
 azure-identity
 pyodbc
 requests
-azure-keyvoult-secrets
+azure-keyvault-keys
